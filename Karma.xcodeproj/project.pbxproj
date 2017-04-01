@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44291A7B1E904DDB00E122E9 /* trash-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 44291A7A1E904DDB00E122E9 /* trash-data.csv */; };
 		44733C981E8F917E009B6D7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44733C971E8F917E009B6D7A /* HomeViewController.swift */; };
 		44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44849B8F1E8FA9F800D94925 /* ResultViewController.swift */; };
 		44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44849B911E8FBDD300D94925 /* recycling-icon.png */; };
 		44849B951E8FC1BB00D94925 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44849B931E8FC1BB00D94925 /* Database.xcdatamodeld */; };
+		44849BD71E90457C00D94925 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44849BD61E90457C00D94925 /* Globals.swift */; };
 		448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46E31E8F8E7900384545 /* AppDelegate.swift */; };
 		448E46E91E8F8E7900384545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448E46E71E8F8E7900384545 /* Main.storyboard */; };
 		448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448E46ED1E8F8E7900384545 /* Assets.xcassets */; };
@@ -37,10 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44291A7A1E904DDB00E122E9 /* trash-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "trash-data.csv"; sourceTree = "<group>"; };
 		44733C971E8F917E009B6D7A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
 		44849B8F1E8FA9F800D94925 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		44849B911E8FBDD300D94925 /* recycling-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recycling-icon.png"; sourceTree = "<group>"; };
 		44849B941E8FC1BB00D94925 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		44849BD61E90457C00D94925 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = ../Globals.swift; sourceTree = "<group>"; };
 		448E46E01E8F8E7900384545 /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448E46E31E8F8E7900384545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448E46E81E8F8E7900384545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,11 +107,13 @@
 		448E46E21E8F8E7900384545 /* Karma */ = {
 			isa = PBXGroup;
 			children = (
+				44849BD61E90457C00D94925 /* Globals.swift */,
 				448E46E31E8F8E7900384545 /* AppDelegate.swift */,
 				44733C971E8F917E009B6D7A /* HomeViewController.swift */,
 				44849B8F1E8FA9F800D94925 /* ResultViewController.swift */,
 				448E46E71E8F8E7900384545 /* Main.storyboard */,
 				448E46ED1E8F8E7900384545 /* Assets.xcassets */,
+				44291A7A1E904DDB00E122E9 /* trash-data.csv */,
 				44849B911E8FBDD300D94925 /* recycling-icon.png */,
 				448E46EF1E8F8E7900384545 /* LaunchScreen.storyboard */,
 				44849B931E8FC1BB00D94925 /* Database.xcdatamodeld */,
@@ -248,6 +254,7 @@
 				448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */,
 				44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */,
 				448E46E91E8F8E7900384545 /* Main.storyboard in Resources */,
+				44291A7B1E904DDB00E122E9 /* trash-data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +282,7 @@
 				448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */,
 				44733C981E8F917E009B6D7A /* HomeViewController.swift in Sources */,
 				44849B951E8FC1BB00D94925 /* Database.xcdatamodeld in Sources */,
+				44849BD71E90457C00D94925 /* Globals.swift in Sources */,
 				44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
