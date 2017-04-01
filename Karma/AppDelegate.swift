@@ -1,4 +1,4 @@
-//
+// TODO: CHECK THAT HANNAH HAS CORRECT VERSION
 //  AppDelegate.swift
 //  Karma
 //
