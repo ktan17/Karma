@@ -13,9 +13,9 @@ extension String {
     
     func toBool() -> Bool? {
         switch self {
-        case "True", "true", "yes", "1":
+        case "True", "true", "yes", "1", "TRUE":
             return true
-        case "False", "false", "no", "0":
+        case "False", "false", "no", "0", "FALSE":
             return false
         default:
             return nil
@@ -34,10 +34,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let defaults = UserDefaults.standard
         let isPreloaded = defaults.bool(forKey: "isPreloaded")
-        if !isPreloaded {
+        //if !isPreloaded {
+            removeData()
             loadDataFromCSV(file: "trash-data")
             defaults.set(true, forKey: "isPreloaded")
-        }
+        //}
         
         return true
     }
@@ -112,13 +113,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func createDatabase(data: String) {
+    func removeData () {
+        // Remove the existing items
+        var managedObjectContext: NSManagedObjectContext!
+        getManagedObjectContext(managedObjectContext: &managedObjectContext)
         
-        let delimiter = ","
-        let lines: [String] = data.components(separatedBy: NSCharacterSet.newlines) as [String]
-        var items = [(name: String, trashType: Int, comment: String, exceptions: Bool)]()
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TrashItem")
         
-        var managedObjectContext: NSManagedObjectContext?
+        do {
+            let fetchedItems = try managedObjectContext.fetch(fetchRequest) as! [TrashItem]
+            
+            for item in fetchedItems {
+                
+                managedObjectContext.delete(item)
+                
+            }
+            
+        } catch {
+            
+            fatalError("Failed to fetch trash items: \(error)")
+            
+        }
+        
+    }
+    
+    func getManagedObjectContext(managedObjectContext: inout NSManagedObjectContext!) {
         
         if #available(iOS 10.0, *) {
             managedObjectContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -143,7 +162,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         }
         
+    }
+    
+    func createDatabase(data: String) {
+        
+        let delimiter = ","
+        let lines: [String] = data.components(separatedBy: NSCharacterSet.newlines) as [String]
+        var items = [(name: String, trashType: Int, comment: String, exceptions: Bool)]()
+        
+        var managedObjectContext: NSManagedObjectContext!
+        getManagedObjectContext(managedObjectContext: &managedObjectContext)
+        
         for line in lines {
+            
+            if line == "" {
+                continue
+            }
             
             var values: [String]
             values = line.components(separatedBy: delimiter)
@@ -155,7 +189,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         for item in items {
             
-            let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "TrashItem", into: managedObjectContext!) as! TrashItem
+            let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "TrashItem", into: managedObjectContext) as! TrashItem
             nextEntry.name = item.name
             nextEntry.type = Int16(item.trashType)
             nextEntry.comment = item.comment
@@ -163,7 +197,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
             do {
                 
-                try managedObjectContext?.save()
+                try managedObjectContext.save()
                 
             } catch {
                 
