@@ -21,6 +21,45 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         resultLabel.text = "You typed in: " + query
+    
+        let lowercaseQuery = query.lowercased()
+        
+        var wordArray = [String]()
+        var tempWord: String = ""
+        
+        var k = 0
+        for char in lowercaseQuery.characters {
+            
+            k += 1
+            if k == lowercaseQuery.characters.count - 1 {
+                
+                if char != " " {
+                    tempWord += String(char)
+                    wordArray.append(tempWord)
+                }
+                
+                else if tempWord.characters.count != 0 {
+                    wordArray.append(tempWord)
+                }
+                
+                break
+                
+            }
+            
+            if char == " " {
+                
+                if tempWord.characters.count != 0 {
+                    wordArray.append(tempWord)
+                    tempWord = ""
+                }
+                
+                continue
+                
+            }
+            
+            tempWord += String(char)
+            
+        }
         
     }
     
