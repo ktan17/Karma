@@ -9,6 +9,21 @@
 import UIKit
 import CoreData
 
+extension String {
+    
+    func toBool() -> Bool? {
+        switch self {
+        case "True", "true", "yes", "1":
+            return true
+        case "False", "false", "no", "0":
+            return false
+        default:
+            return nil
+        }
+    }
+    
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -101,7 +116,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let delimiter = ","
         let lines: [String] = data.components(separatedBy: NSCharacterSet.newlines) as [String]
-        var items = [(name: String, trashType: Int, comment: String)]()
+        var items = [(name: String, trashType: Int, comment: String, exceptions: Bool)]()
         
         var managedObjectContext: NSManagedObjectContext?
         
@@ -133,7 +148,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             var values: [String]
             values = line.components(separatedBy: delimiter)
         
-            let nextItem = (values[0], Int(values[1])!, values[2])
+            let nextItem = (values[0], Int(values[1])!, values[2], values[3].toBool()!)
             items.append(nextItem)
             
         }
@@ -144,6 +159,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             nextEntry.name = item.name
             nextEntry.type = Int16(item.trashType)
             nextEntry.comment = item.comment
+            nextEntry.exceptions = item.exceptions
 
             do {
                 
