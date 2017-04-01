@@ -17,7 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        loadDataFromCSV(file: "trash-data")
+        let defaults = UserDefaults.standard
+        let isPreloaded = defaults.bool(forKey: "isPreloaded")
+        if !isPreloaded {
+            loadDataFromCSV(file: "trash-data")
+            defaults.set(true, forKey: "isPreloaded")
+        }
         
         return true
     }
@@ -151,7 +156,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             
         }
-        
+    
     }
 
 }
