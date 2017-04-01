@@ -18,6 +18,7 @@
 		448E46FC1E8F8E7900384545 /* KarmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46FB1E8F8E7900384545 /* KarmaTests.swift */; };
 		448E47071E8F8E7900384545 /* KarmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E47061E8F8E7900384545 /* KarmaUITests.swift */; };
 		44DD8CB51E90575100A15EF5 /* trash-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CB41E90575100A15EF5 /* trash-data.csv */; };
+		44DD8CB71E9073D100A15EF5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD8CB61E9073D100A15EF5 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		448E47061E8F8E7900384545 /* KarmaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KarmaUITests.swift; sourceTree = "<group>"; };
 		448E47081E8F8E7900384545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44DD8CB41E90575100A15EF5 /* trash-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "trash-data.csv"; path = "../trash-data.csv"; sourceTree = "<group>"; };
+		44DD8CB61E9073D100A15EF5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		448E46E21E8F8E7900384545 /* Karma */ = {
 			isa = PBXGroup;
 			children = (
+				44DD8CB61E9073D100A15EF5 /* Utilities.swift */,
 				448E46E31E8F8E7900384545 /* AppDelegate.swift */,
 				44733C971E8F917E009B6D7A /* HomeViewController.swift */,
 				44849B8F1E8FA9F800D94925 /* ResultViewController.swift */,
@@ -279,6 +282,7 @@
 				448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */,
 				44733C981E8F917E009B6D7A /* HomeViewController.swift in Sources */,
 				44849B951E8FC1BB00D94925 /* Database.xcdatamodeld in Sources */,
+				44DD8CB71E9073D100A15EF5 /* Utilities.swift in Sources */,
 				44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
