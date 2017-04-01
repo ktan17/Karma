@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44733C981E8F917E009B6D7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44733C971E8F917E009B6D7A /* HomeViewController.swift */; };
+		44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44849B8F1E8FA9F800D94925 /* ResultViewController.swift */; };
 		448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46E31E8F8E7900384545 /* AppDelegate.swift */; };
-		448E46E61E8F8E7900384545 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46E51E8F8E7900384545 /* ViewController.swift */; };
 		448E46E91E8F8E7900384545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448E46E71E8F8E7900384545 /* Main.storyboard */; };
-		448E46EC1E8F8E7900384545 /* Karma.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 448E46EA1E8F8E7900384545 /* Karma.xcdatamodeld */; };
 		448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448E46ED1E8F8E7900384545 /* Assets.xcassets */; };
 		448E46F11E8F8E7900384545 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448E46EF1E8F8E7900384545 /* LaunchScreen.storyboard */; };
 		448E46FC1E8F8E7900384545 /* KarmaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46FB1E8F8E7900384545 /* KarmaTests.swift */; };
@@ -35,11 +35,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44733C971E8F917E009B6D7A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		44849B8F1E8FA9F800D94925 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		448E46E01E8F8E7900384545 /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448E46E31E8F8E7900384545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		448E46E51E8F8E7900384545 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		448E46E81E8F8E7900384545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		448E46EB1E8F8E7900384545 /* Karma.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Karma.xcdatamodel; sourceTree = "<group>"; };
 		448E46ED1E8F8E7900384545 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		448E46F01E8F8E7900384545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		448E46F21E8F8E7900384545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,12 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				448E46E31E8F8E7900384545 /* AppDelegate.swift */,
-				448E46E51E8F8E7900384545 /* ViewController.swift */,
+				44733C971E8F917E009B6D7A /* HomeViewController.swift */,
+				44849B8F1E8FA9F800D94925 /* ResultViewController.swift */,
 				448E46E71E8F8E7900384545 /* Main.storyboard */,
 				448E46ED1E8F8E7900384545 /* Assets.xcassets */,
 				448E46EF1E8F8E7900384545 /* LaunchScreen.storyboard */,
 				448E46F21E8F8E7900384545 /* Info.plist */,
-				448E46EA1E8F8E7900384545 /* Karma.xcdatamodeld */,
 			);
 			path = Karma;
 			sourceTree = "<group>";
@@ -265,9 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				448E46E61E8F8E7900384545 /* ViewController.swift in Sources */,
-				448E46EC1E8F8E7900384545 /* Karma.xcdatamodeld in Sources */,
 				448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */,
+				44733C981E8F917E009B6D7A /* HomeViewController.swift in Sources */,
+				44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +419,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 35RJCBGV7U;
 				INFOPLIST_FILE = Karma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenBruins.Karma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 35RJCBGV7U;
 				INFOPLIST_FILE = Karma/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.GreenBruins.Karma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -516,6 +518,7 @@
 				448E470D1E8F8E7900384545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448E470E1E8F8E7900384545 /* Build configuration list for PBXNativeTarget "KarmaTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +527,7 @@
 				448E47101E8F8E7900384545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		448E47111E8F8E7900384545 /* Build configuration list for PBXNativeTarget "KarmaUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,21 +536,9 @@
 				448E47131E8F8E7900384545 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		448E46EA1E8F8E7900384545 /* Karma.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				448E46EB1E8F8E7900384545 /* Karma.xcdatamodel */,
-			);
-			currentVersion = 448E46EB1E8F8E7900384545 /* Karma.xcdatamodel */;
-			path = Karma.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 448E46D81E8F8E7900384545 /* Project object */;
 }
