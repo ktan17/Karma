@@ -10,12 +10,17 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    var query: String!
+    @IBOutlet var resultLabel: UILabel!
+    
     ///////////////////////////////////////////////////////////////////////////
     //  Methods
     ///////////////////////////////////////////////////////////////////////////
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultLabel.text = "You typed in: " + query
         
     }
     

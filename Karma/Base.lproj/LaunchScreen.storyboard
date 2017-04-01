@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,12 +21,48 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycling-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3GG-GO-UOs">
+                                <rect key="frame" x="107" y="127" width="160" height="160"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What goes around" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zD3-Lb-XSk">
+                                <rect key="frame" x="41" y="318" width="292" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="FsJ-77-uec"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Courier-Oblique" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="comes around" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyN-IK-GQY">
+                                <rect key="frame" x="41" y="356" width="292" height="30"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.61547944745049121" green="0.86673280423280419" blue="0.58216226509803115" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3GG-GO-UOs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="91" id="8hO-JS-rIg"/>
+                            <constraint firstItem="zD3-Lb-XSk" firstAttribute="leading" secondItem="xyN-IK-GQY" secondAttribute="leading" id="C2g-F4-fDr"/>
+                            <constraint firstItem="zD3-Lb-XSk" firstAttribute="top" secondItem="3GG-GO-UOs" secondAttribute="bottom" constant="31" id="DYg-th-bZ5"/>
+                            <constraint firstItem="zD3-Lb-XSk" firstAttribute="trailing" secondItem="xyN-IK-GQY" secondAttribute="trailing" id="EIq-Zx-IDy"/>
+                            <constraint firstItem="zD3-Lb-XSk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KT3-US-MNq"/>
+                            <constraint firstItem="3GG-GO-UOs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="107" id="RZE-dp-LgM"/>
+                            <constraint firstItem="xyN-IK-GQY" firstAttribute="top" secondItem="zD3-Lb-XSk" secondAttribute="bottom" constant="8" symbolic="YES" id="TBs-lc-Vgc"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xyN-IK-GQY" secondAttribute="bottom" constant="281" id="dhu-SC-1eX"/>
+                            <constraint firstItem="3GG-GO-UOs" firstAttribute="centerX" secondItem="zD3-Lb-XSk" secondAttribute="centerX" id="kOR-Gv-SMP"/>
+                            <constraint firstItem="zD3-Lb-XSk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="25" id="kjH-Rg-BVU"/>
+                            <constraint firstItem="3GG-GO-UOs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ogD-6A-eo5"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recycling-icon.png" width="1200" height="1161"/>
+    </resources>
 </document>

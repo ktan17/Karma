@@ -48,7 +48,7 @@
                                 </constraints>
                                 <state key="normal" title="Go"/>
                                 <connections>
-                                    <action selector="pressedGo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ubn-J5-zQK"/>
+                                    <segue destination="TsQ-gT-bF7" kind="presentation" identifier="showResult" id="Osp-Y0-KSv"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -66,7 +66,6 @@
                         <outlet property="enterButton" destination="mdH-94-4Fd" id="JoK-xg-Lg2"/>
                         <outlet property="goButton" destination="mdH-94-4Fd" id="5Mc-F6-W1r"/>
                         <outlet property="queryTextField" destination="tpb-6k-9Wk" id="gh1-oT-vqq"/>
-                        <segue destination="TsQ-gT-bF7" kind="presentation" identifier="showResult" modalTransitionStyle="partialCurl" id="Xuo-I3-qgc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,7 +75,7 @@
         <!--Result View Controller-->
         <scene sceneID="9Pi-JY-CoQ">
             <objects>
-                <viewController id="TsQ-gT-bF7" customClass="ResultViewController" sceneMemberID="viewController">
+                <viewController id="TsQ-gT-bF7" customClass="ResultViewController" customModule="Karma" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uiC-BA-g00"/>
                         <viewControllerLayoutGuide type="bottom" id="aDX-uk-7xI"/>
@@ -85,12 +84,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-0H-LlF">
-                                <rect key="frame" x="166" y="337" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAl-Oj-AlR">
                                 <rect key="frame" x="53" y="36" width="46" height="30"/>
                                 <constraints>
@@ -101,21 +94,34 @@
                                     <segue destination="lyJ-kI-AkF" kind="unwind" unwindAction="unwindToHomeViewWithSegue:" id="vuR-2Y-Wde"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You typed in:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-0H-LlF">
+                                <rect key="frame" x="53" y="83" width="268" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="BQm-nc-aJ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aDX-uk-7xI" firstAttribute="top" secondItem="vVH-0H-LlF" secondAttribute="bottom" constant="309" id="F08-MG-NoE"/>
-                            <constraint firstItem="vVH-0H-LlF" firstAttribute="centerX" secondItem="M7D-Ef-ypa" secondAttribute="centerX" id="Ycd-zT-1yu"/>
+                            <constraint firstItem="vVH-0H-LlF" firstAttribute="centerX" secondItem="M7D-Ef-ypa" secondAttribute="centerX" id="6ZW-88-h7j"/>
+                            <constraint firstItem="vVH-0H-LlF" firstAttribute="top" secondItem="SAl-Oj-AlR" secondAttribute="bottom" constant="17" id="ZDT-Cb-dB9"/>
                             <constraint firstItem="SAl-Oj-AlR" firstAttribute="leading" secondItem="M7D-Ef-ypa" secondAttribute="leadingMargin" constant="37" id="oyh-ua-Wtl"/>
                             <constraint firstItem="SAl-Oj-AlR" firstAttribute="top" secondItem="uiC-BA-g00" secondAttribute="bottom" constant="16" id="pmi-WS-CAn"/>
+                            <constraint firstItem="vVH-0H-LlF" firstAttribute="leading" secondItem="SAl-Oj-AlR" secondAttribute="leading" id="yl1-WH-K94"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="22u-HB-TR1"/>
+                    <connections>
+                        <outlet property="resultLabel" destination="vVH-0H-LlF" id="De4-BB-8Zc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIl-DE-Grm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lyJ-kI-AkF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="865" y="37"/>
+            <point key="canvasLocation" x="864.79999999999995" y="36.431784107946029"/>
         </scene>
     </scenes>
 </document>
