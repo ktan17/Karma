@@ -11,6 +11,11 @@
 		44849B901E8FA9F800D94925 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44849B8F1E8FA9F800D94925 /* ResultViewController.swift */; };
 		44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 44849B911E8FBDD300D94925 /* recycling-icon.png */; };
 		44849B951E8FC1BB00D94925 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 44849B931E8FC1BB00D94925 /* Database.xcdatamodeld */; };
+		448C0F531E909AE000CCD595 /* cardboard.csv in Resources */ = {isa = PBXBuildFile; fileRef = 448C0F521E909AE000CCD595 /* cardboard.csv */; };
+		448C0F551E909AE500CCD595 /* glass.csv in Resources */ = {isa = PBXBuildFile; fileRef = 448C0F541E909AE500CCD595 /* glass.csv */; };
+		448C0F571E909AEA00CCD595 /* paper.csv in Resources */ = {isa = PBXBuildFile; fileRef = 448C0F561E909AEA00CCD595 /* paper.csv */; };
+		448C0F591E909B2900CCD595 /* plastic.csv in Resources */ = {isa = PBXBuildFile; fileRef = 448C0F581E909B2900CCD595 /* plastic.csv */; };
+		448C0F5B1E909B2D00CCD595 /* metal.csv in Resources */ = {isa = PBXBuildFile; fileRef = 448C0F5A1E909B2D00CCD595 /* metal.csv */; };
 		448E46E41E8F8E7900384545 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E46E31E8F8E7900384545 /* AppDelegate.swift */; };
 		448E46E91E8F8E7900384545 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448E46E71E8F8E7900384545 /* Main.storyboard */; };
 		448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 448E46ED1E8F8E7900384545 /* Assets.xcassets */; };
@@ -50,6 +55,11 @@
 		44849B8F1E8FA9F800D94925 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		44849B911E8FBDD300D94925 /* recycling-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "recycling-icon.png"; sourceTree = "<group>"; };
 		44849B941E8FC1BB00D94925 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		448C0F521E909AE000CCD595 /* cardboard.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cardboard.csv; sourceTree = "<group>"; };
+		448C0F541E909AE500CCD595 /* glass.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glass.csv; sourceTree = "<group>"; };
+		448C0F561E909AEA00CCD595 /* paper.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paper.csv; sourceTree = "<group>"; };
+		448C0F581E909B2900CCD595 /* plastic.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plastic.csv; sourceTree = "<group>"; };
+		448C0F5A1E909B2D00CCD595 /* metal.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = metal.csv; sourceTree = "<group>"; };
 		448E46E01E8F8E7900384545 /* Karma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Karma.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		448E46E31E8F8E7900384545 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		448E46E81E8F8E7900384545 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +167,11 @@
 			isa = PBXGroup;
 			children = (
 				44DD8CB41E90575100A15EF5 /* trash-data.csv */,
+				448C0F521E909AE000CCD595 /* cardboard.csv */,
+				448C0F541E909AE500CCD595 /* glass.csv */,
+				448C0F561E909AEA00CCD595 /* paper.csv */,
+				448C0F581E909B2900CCD595 /* plastic.csv */,
+				448C0F5A1E909B2D00CCD595 /* metal.csv */,
 				44DD8CBF1E9077CC00A15EF5 /* guildof.ttf */,
 				44DD8CC31E90786E00A15EF5 /* Accuratist.ttf */,
 				44DD8CC91E907DA900A15EF5 /* wood.png */,
@@ -280,14 +295,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				44DD8CCA1E907DA900A15EF5 /* wood.png in Resources */,
+				448C0F5B1E909B2D00CCD595 /* metal.csv in Resources */,
+				448C0F551E909AE500CCD595 /* glass.csv in Resources */,
 				44DD8CBE1E90773B00A15EF5 /* TitleBG.jpg in Resources */,
 				448E46F11E8F8E7900384545 /* LaunchScreen.storyboard in Resources */,
 				448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */,
+				448C0F591E909B2900CCD595 /* plastic.csv in Resources */,
+				448C0F571E909AEA00CCD595 /* paper.csv in Resources */,
 				44DD8CCE1E908B2B00A15EF5 /* forrest-dump-sad.png in Resources */,
 				44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */,
 				44DD8CC81E907BB300A15EF5 /* line.png in Resources */,
 				44DD8CCC1E90879A00A15EF5 /* forrest-dump.png in Resources */,
 				448E46E91E8F8E7900384545 /* Main.storyboard in Resources */,
+				448C0F531E909AE000CCD595 /* cardboard.csv in Resources */,
 				44DD8CC41E90786E00A15EF5 /* Accuratist.ttf in Resources */,
 				44DD8CC01E90781700A15EF5 /* guildof.ttf in Resources */,
 				44DD8CB51E90575100A15EF5 /* trash-data.csv in Resources */,
