@@ -14,7 +14,7 @@ class ResultViewController: UIViewController {
     var query: String!
     var wordArray = [String]()
     var isMaterialAnException: Bool = false
-    var materialStatus: Int = 5
+    var materialStatus: Int16 = 5
     var materialFact: String = ""
     
     @IBOutlet var resultLabel: UILabel!
@@ -73,7 +73,6 @@ class ResultViewController: UIViewController {
         
         do {
             
-            var k: Int = 0
             let fetchedItems = try managedObjectContext.fetch(fetchRequest) as! [TrashItem]
             
             for word in wordArray {
@@ -86,18 +85,20 @@ class ResultViewController: UIViewController {
                     // checking exceptions
                     if (isMaterialAnException)
                     {
-                        // check if any of the following entered words align with exceptions
+                        // TODO: check if any of the following entered words align with exceptions
+                        materialStatus = Int16(fetchedItems[index].type)
+                        materialFact = fetchedItems[index].comment!
                     } else
                     {
-                        // make sure that only one material is inputted
+                        // TODO: make sure that only one material is inputted
+                        // TODO: set result based on numeric id value of material
                         
-                        // set result based on numeric id value of material
+                        materialStatus = Int16(fetchedItems[index].type)
+                        materialFact = fetchedItems[index].comment!
                     }
                     
                     break
                 }
-                
-                k += 1
             }
             
         } catch {
@@ -106,7 +107,7 @@ class ResultViewController: UIViewController {
             
         }
         
-        //displayResult() // in
+        displayResult(status: materialStatus, fact: materialFact)
         // TODO: Iterate through Type Array (array of all of the trashtypes (0-4)) to determine if the query is recyclable, trash, etc.
         
         // Display what it is on the screen
@@ -116,6 +117,55 @@ class ResultViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    func displayResult(status: Int16, fact: String)
+    {
+        switch (status)
+        {
+            case 0:
+            {
+                //
+                break
+            }
+            
+            case 1:
+            {
+                //
+                break
+            }
+        
+            case 2:
+            {
+                //
+                break
+            }
+       
+            case 3:
+            {
+                //
+                break
+            }
+            
+            case 4:
+            {
+                //
+                break
+            }
+            
+            case 5:
+            {
+                //
+                break
+            }
+            
+            default:
+            {
+                    //
+                    break
+            }
+        }
     }
     
 }
