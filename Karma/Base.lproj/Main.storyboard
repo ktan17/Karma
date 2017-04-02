@@ -43,10 +43,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mdH-94-4Fd">
-                                <rect key="frame" x="123" y="431" width="128" height="42"/>
+                                <rect key="frame" x="123" y="415" width="128" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="7pR-y1-x1a"/>
-                                    <constraint firstAttribute="height" constant="42" id="lMy-m4-UxS"/>
+                                    <constraint firstAttribute="width" constant="128" id="IJv-IO-3hw"/>
+                                    <constraint firstAttribute="height" constant="42" id="y6c-1D-dDa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="31"/>
                                 <state key="normal" title="GO!" backgroundImage="wood.png">
@@ -56,23 +56,32 @@
                                     <segue destination="TsQ-gT-bF7" kind="presentation" identifier="showResult" modalTransitionStyle="partialCurl" id="Osp-Y0-KSv"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="forrest-dump.png" translatesAutoresizingMaskIntoConstraints="NO" id="MRq-Oh-xhk">
+                                <rect key="frame" x="-15" y="456" width="168" height="229"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="cBR-dp-ifX"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99725390344497711" green="1" blue="0.99435708706873005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mdH-94-4Fd" secondAttribute="bottom" constant="194" id="8Cc-cB-FbR"/>
+                            <constraint firstItem="MRq-Oh-xhk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-31" id="5v4-M2-FrF"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mdH-94-4Fd" secondAttribute="bottom" constant="210" id="BhN-GC-U5j"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="centerY" secondItem="tpb-6k-9Wk" secondAttribute="centerY" id="GOS-kF-8o4"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="GuL-VF-rif"/>
+                            <constraint firstItem="MRq-Oh-xhk" firstAttribute="top" secondItem="tpb-6k-9Wk" secondAttribute="bottom" constant="92" id="Lkc-cL-Cnr"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="Pvb-sj-gvy"/>
-                            <constraint firstItem="mdH-94-4Fd" firstAttribute="centerX" secondItem="tpb-6k-9Wk" secondAttribute="centerX" id="RFd-Gn-oHM"/>
                             <constraint firstItem="tpb-6k-9Wk" firstAttribute="top" secondItem="5lc-d6-MFQ" secondAttribute="bottom" constant="45" id="USc-Bb-sbw"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V28-kn-DgA"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="leading" secondItem="tpb-6k-9Wk" secondAttribute="leading" id="Yfu-q5-Tzt"/>
-                            <constraint firstItem="mdH-94-4Fd" firstAttribute="top" secondItem="tpb-6k-9Wk" secondAttribute="bottom" constant="67" id="fA6-sR-pEf"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gmr-dQ-Smn"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="trailing" secondItem="tpb-6k-9Wk" secondAttribute="trailing" id="p3C-az-pUS"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="pX6-bK-JZA"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="centerX" secondItem="tpb-6k-9Wk" secondAttribute="centerX" id="rZY-6C-7GQ"/>
+                            <constraint firstItem="mdH-94-4Fd" firstAttribute="top" secondItem="tpb-6k-9Wk" secondAttribute="bottom" constant="51" id="s2D-Uy-5Pi"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="MRq-Oh-xhk" secondAttribute="bottom" constant="-18" id="sqI-a0-irQ"/>
                             <constraint firstAttribute="trailing" secondItem="STf-UK-g3m" secondAttribute="trailing" id="uwi-7Q-abC"/>
+                            <constraint firstItem="mdH-94-4Fd" firstAttribute="centerX" secondItem="tpb-6k-9Wk" secondAttribute="centerX" id="wK0-Tk-nnz"/>
                         </constraints>
                     </view>
                     <connections>
@@ -139,6 +148,7 @@
     </scenes>
     <resources>
         <image name="TitleBG.jpg" width="640" height="960"/>
+        <image name="forrest-dump.png" width="1654" height="2180"/>
         <image name="line.png" width="280" height="60"/>
         <image name="wood.png" width="1462" height="622"/>
     </resources>
