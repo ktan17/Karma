@@ -15,7 +15,7 @@ class ResultViewController: UIViewController {
     var wordArray = [String]()
     var isMaterialAnException: Bool = false
     var materialStatus: Int = 5
-    var materialCount: Int = 0
+    var materialFact: String = ""
     
     @IBOutlet var resultLabel: UILabel!
     
@@ -73,6 +73,7 @@ class ResultViewController: UIViewController {
         
         do {
             
+            var k: Int = 0
             let fetchedItems = try managedObjectContext.fetch(fetchRequest) as! [TrashItem]
             
             for word in wordArray {
@@ -89,12 +90,14 @@ class ResultViewController: UIViewController {
                     } else
                     {
                         // make sure that only one material is inputted
+                        
                         // set result based on numeric id value of material
                     }
                     
                     break
                 }
                 
+                k += 1
             }
             
         } catch {
