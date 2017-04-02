@@ -198,6 +198,34 @@ class ResultViewController: UIViewController {
             
         }
         
+        if lowercaseQuery.contains("light bulb") {
+            
+            materialStatus = 3
+            materialFact = "E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!"
+            
+        }
+        
+        else if lowercaseQuery.contains("hannah elarabawy") {
+            
+            materialStatus = 3
+            materialFact = "spews a disgusting amount of puns, dispose of properly."
+            
+        }
+        
+        else if lowercaseQuery.contains("kevin tan") {
+            
+            materialStatus = 4
+            materialFact = "the token chinese engineer in the group"
+            
+        }
+        
+        else if lowercaseQuery.contains("sriharshini") {
+            
+            materialStatus = 1
+            materialFact = "truly belongs in the dirt"
+            
+        }
+        
         displayResult(status: materialStatus, fact: materialFact)
         // TODO: Iterate through Type Array (array of all of the trashtypes (0-4)) to determine if the query is recyclable, trash, etc.
         
