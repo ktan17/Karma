@@ -34,11 +34,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let defaults = UserDefaults.standard
         let isPreloaded = defaults.bool(forKey: "isPreloaded")
-        //if !isPreloaded {
+        if !isPreloaded {
             removeData()
-            loadDataFromCSV(file: "trash-data")
+            loadDataFromCSV(file: "trash-data", material: "Trash")
+            loadDataFromCSV(file: "cardboard", material: "Cardboard")
+            loadDataFromCSV(file: "glass", material: "Glass")
+            loadDataFromCSV(file: "paper", material:  "Paper")
+            loadDataFromCSV(file: "plastic", material: "Plastic")
+            loadDataFromCSV(file: "metal", material: "Metal")
             defaults.set(true, forKey: "isPreloaded")
-        //}
+        }
         
         return true
     }
@@ -94,7 +99,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return container
     }()
     
-    func loadDataFromCSV(file: String) {
+    func loadDataFromCSV(file: String, material: String) {
         
         // Load file
         guard let filepath = Bundle.main.path(forResource: file, ofType: "csv") else {
@@ -105,7 +110,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Get contents
         do {
             let contents = try String(contentsOfFile: filepath)
-            createDatabase(data: contents)
+            createDatabase(data: contents, material: material)
         } catch {
             print("File Read Error for file \(filepath)")
             return
@@ -137,11 +142,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
     
-    func createDatabase(data: String) {
+    func createDatabase(data: String, material: String) {
         
         let delimiter = ","
         let lines: [String] = data.components(separatedBy: NSCharacterSet.newlines) as [String]
+        
         var items = [(name: String, trashType: Int, comment: String, exceptions: Bool)]()
+        var materialItems = [(modifier: String, trashType: Int, comment: String)]()
         
         var managedObjectContext: NSManagedObjectContext!
         getManagedObjectContext(managedObjectContext: &managedObjectContext)
@@ -154,29 +161,67 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
             var values: [String]
             values = line.components(separatedBy: delimiter)
-        
-            let nextItem = (values[0], Int(values[1])!, values[2], values[3].toBool()!)
-            items.append(nextItem)
+            
+            if material == "Trash" {
+            
+                let nextItem = (values[0], Int(values[1])!, values[2], values[3].toBool()!)
+                items.append(nextItem)
+                
+            }
+            
+            else {
+                
+                let nextItem = (values[0], Int(values[1])!, values[2])
+                materialItems.append(nextItem)
+                
+            }
             
         }
         
-        for item in items {
+        switch material {
             
-            let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "TrashItem", into: managedObjectContext) as! TrashItem
-            nextEntry.name = item.name
-            nextEntry.type = Int16(item.trashType)
-            nextEntry.comment = item.comment
-            nextEntry.exceptions = item.exceptions
-
-            do {
+        case "Trash":
+            for item in items {
                 
-                try managedObjectContext.save()
-                
-            } catch {
-                
-                print("insert error: \(error.localizedDescription)")
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "TrashItem", into: managedObjectContext) as! TrashItem
+                nextEntry.name = item.name
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                nextEntry.exceptions = item.exceptions
                 
             }
+            
+        case "Cardboard":
+            for item in materialItems {
+                
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "CardboardItem", into: managedObjectContext) as! CardboardItem
+                nextEntry.modifier = item.modifier
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                
+            }
+            
+        case "Cardboard":
+            for item in materialItems {
+                
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "CardboardItem", into: managedObjectContext) as! CardboardItem
+                nextEntry.modifier = item.modifier
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                
+            }
+            
+            
+        
+        }
+
+        do {
+            
+            try managedObjectContext.save()
+            
+        } catch {
+            
+            print("insert error: \(error.localizedDescription)")
             
         }
     
