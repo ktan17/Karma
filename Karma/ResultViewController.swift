@@ -37,7 +37,7 @@ class ResultViewController: UIViewController {
         for char in lowercaseQuery.characters {
             
             k += 1
-            if k == lowercaseQuery.characters.count - 1 {
+            if k == lowercaseQuery.characters.count {
                 
                 if char != " " {
                     tempWord += String(char)

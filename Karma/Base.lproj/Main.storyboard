@@ -117,28 +117,32 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAl-Oj-AlR">
-                                <rect key="frame" x="53" y="36" width="46" height="30"/>
+                                <rect key="frame" x="53" y="36" width="46" height="32"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="46" id="EbE-sd-2dZ"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="17"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="lyJ-kI-AkF" kind="unwind" unwindAction="unwindToHomeViewWithSegue:" id="vuR-2Y-Wde"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You typed in:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVH-0H-LlF">
-                                <rect key="frame" x="53" y="83" width="268" height="91"/>
+                                <rect key="frame" x="53" y="85" width="268" height="91"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="91" id="BQm-nc-aJ6"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ga1-sQ-ZuR">
-                                <rect key="frame" x="53" y="173" width="291" height="156"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNy-UU-LWZ">
+                                <rect key="frame" x="43" y="178" width="289" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="289" id="4PI-aE-Cct"/>
+                                    <constraint firstAttribute="height" constant="105" id="trA-XM-0I5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -146,7 +150,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="vVH-0H-LlF" firstAttribute="centerX" secondItem="M7D-Ef-ypa" secondAttribute="centerX" id="6ZW-88-h7j"/>
+                            <constraint firstItem="SNy-UU-LWZ" firstAttribute="centerX" secondItem="M7D-Ef-ypa" secondAttribute="centerX" id="CcM-Uf-iE7"/>
                             <constraint firstItem="YyC-uy-jZ8" firstAttribute="top" secondItem="M7D-Ef-ypa" secondAttribute="top" id="EIK-YS-HF8"/>
+                            <constraint firstItem="SNy-UU-LWZ" firstAttribute="leading" secondItem="M7D-Ef-ypa" secondAttribute="leadingMargin" constant="27" id="FnQ-Lj-wGf"/>
+                            <constraint firstItem="SNy-UU-LWZ" firstAttribute="top" secondItem="vVH-0H-LlF" secondAttribute="bottom" constant="2" id="Sd6-Ln-ame"/>
                             <constraint firstItem="YyC-uy-jZ8" firstAttribute="centerY" secondItem="M7D-Ef-ypa" secondAttribute="centerY" id="TIW-Fv-B9u"/>
                             <constraint firstItem="vVH-0H-LlF" firstAttribute="top" secondItem="SAl-Oj-AlR" secondAttribute="bottom" constant="17" id="ZDT-Cb-dB9"/>
                             <constraint firstAttribute="trailing" secondItem="YyC-uy-jZ8" secondAttribute="trailing" id="c5h-pP-x6o"/>
@@ -161,13 +168,13 @@
                     <navigationItem key="navigationItem" id="22u-HB-TR1"/>
                     <connections>
                         <outlet property="resultLabel" destination="vVH-0H-LlF" id="De4-BB-8Zc"/>
-                        <outlet property="statusLabel" destination="ga1-sQ-ZuR" id="glK-6u-aR2"/>
+                        <outlet property="statusLabel" destination="SNy-UU-LWZ" id="5ox-UU-niE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QIl-DE-Grm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="lyJ-kI-AkF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="864.79999999999995" y="36.431784107946029"/>
+            <point key="canvasLocation" x="1304.8" y="13.943028485757123"/>
         </scene>
     </scenes>
     <resources>
