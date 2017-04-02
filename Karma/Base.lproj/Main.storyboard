@@ -9,6 +9,11 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Accuratist.ttf">
+            <string>Accuratist</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -25,15 +30,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="STf-UK-g3m">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-6k-9Wk">
-                                <rect key="frame" x="47" y="318" width="280" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" background="line.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="tpb-6k-9Wk">
+                                <rect key="frame" x="47" y="304" width="280" height="60"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="36"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are you throwing out?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lc-d6-MFQ">
-                                <rect key="frame" x="47" y="133" width="280" height="125"/>
-                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="35"/>
+                                <rect key="frame" x="47" y="133" width="280" height="126"/>
+                                <fontDescription key="fontDescription" name="Accuratist" family="Accuratist" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -50,12 +55,12 @@
                         </subviews>
                         <color key="backgroundColor" red="0.99725390344497711" green="1" blue="0.99435708706873005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mdH-94-4Fd" firstAttribute="top" secondItem="tpb-6k-9Wk" secondAttribute="bottom" constant="90" id="DYd-lO-1zh"/>
+                            <constraint firstItem="mdH-94-4Fd" firstAttribute="top" secondItem="tpb-6k-9Wk" secondAttribute="bottom" constant="74" id="DYd-lO-1zh"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="centerY" secondItem="tpb-6k-9Wk" secondAttribute="centerY" id="GOS-kF-8o4"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="113" id="GuL-VF-rif"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="31" id="Pvb-sj-gvy"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mdH-94-4Fd" secondAttribute="bottom" constant="199" id="Tx1-vE-2do"/>
-                            <constraint firstItem="tpb-6k-9Wk" firstAttribute="top" secondItem="5lc-d6-MFQ" secondAttribute="bottom" constant="60" id="USc-Bb-sbw"/>
+                            <constraint firstItem="tpb-6k-9Wk" firstAttribute="top" secondItem="5lc-d6-MFQ" secondAttribute="bottom" constant="45" id="USc-Bb-sbw"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="V28-kn-DgA"/>
                             <constraint firstItem="5lc-d6-MFQ" firstAttribute="leading" secondItem="tpb-6k-9Wk" secondAttribute="leading" id="Yfu-q5-Tzt"/>
                             <constraint firstItem="STf-UK-g3m" firstAttribute="centerX" secondItem="mdH-94-4Fd" secondAttribute="centerX" id="ZKB-dU-5Vf"/>
@@ -129,6 +134,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="TitleBG.jpg" width="900" height="1598"/>
+        <image name="TitleBG.jpg" width="640" height="960"/>
+        <image name="line.png" width="280" height="60"/>
     </resources>
 </document>

@@ -19,7 +19,10 @@
 		448E47071E8F8E7900384545 /* KarmaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448E47061E8F8E7900384545 /* KarmaUITests.swift */; };
 		44DD8CB51E90575100A15EF5 /* trash-data.csv in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CB41E90575100A15EF5 /* trash-data.csv */; };
 		44DD8CB71E9073D100A15EF5 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44DD8CB61E9073D100A15EF5 /* Utilities.swift */; };
-		44DD8CB91E90750400A15EF5 /* TitleBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CB81E90750400A15EF5 /* TitleBG.jpg */; };
+		44DD8CBE1E90773B00A15EF5 /* TitleBG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CBD1E90773B00A15EF5 /* TitleBG.jpg */; };
+		44DD8CC01E90781700A15EF5 /* guildof.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CBF1E9077CC00A15EF5 /* guildof.ttf */; };
+		44DD8CC41E90786E00A15EF5 /* Accuratist.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CC31E90786E00A15EF5 /* Accuratist.ttf */; };
+		44DD8CC81E907BB300A15EF5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CC71E907BB300A15EF5 /* line.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +61,10 @@
 		448E47081E8F8E7900384545 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44DD8CB41E90575100A15EF5 /* trash-data.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "trash-data.csv"; path = "../trash-data.csv"; sourceTree = "<group>"; };
 		44DD8CB61E9073D100A15EF5 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		44DD8CB81E90750400A15EF5 /* TitleBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TitleBG.jpg; sourceTree = "<group>"; };
+		44DD8CBD1E90773B00A15EF5 /* TitleBG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = TitleBG.jpg; sourceTree = "<group>"; };
+		44DD8CBF1E9077CC00A15EF5 /* guildof.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guildof.ttf; sourceTree = "<group>"; };
+		44DD8CC31E90786E00A15EF5 /* Accuratist.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Accuratist.ttf; sourceTree = "<group>"; };
+		44DD8CC71E907BB300A15EF5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +121,7 @@
 				44849B8F1E8FA9F800D94925 /* ResultViewController.swift */,
 				448E46E71E8F8E7900384545 /* Main.storyboard */,
 				448E46ED1E8F8E7900384545 /* Assets.xcassets */,
-				44DD8CB41E90575100A15EF5 /* trash-data.csv */,
-				44DD8CB81E90750400A15EF5 /* TitleBG.jpg */,
-				44849B911E8FBDD300D94925 /* recycling-icon.png */,
+				44DD8CBC1E90770800A15EF5 /* Resources */,
 				448E46EF1E8F8E7900384545 /* LaunchScreen.storyboard */,
 				44849B931E8FC1BB00D94925 /* Database.xcdatamodeld */,
 				448E46F21E8F8E7900384545 /* Info.plist */,
@@ -141,6 +145,19 @@
 				448E47081E8F8E7900384545 /* Info.plist */,
 			);
 			path = KarmaUITests;
+			sourceTree = "<group>";
+		};
+		44DD8CBC1E90770800A15EF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44DD8CB41E90575100A15EF5 /* trash-data.csv */,
+				44DD8CBF1E9077CC00A15EF5 /* guildof.ttf */,
+				44DD8CC31E90786E00A15EF5 /* Accuratist.ttf */,
+				44DD8CC71E907BB300A15EF5 /* line.png */,
+				44DD8CBD1E90773B00A15EF5 /* TitleBG.jpg */,
+				44849B911E8FBDD300D94925 /* recycling-icon.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,11 +270,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44DD8CBE1E90773B00A15EF5 /* TitleBG.jpg in Resources */,
 				448E46F11E8F8E7900384545 /* LaunchScreen.storyboard in Resources */,
 				448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */,
-				44DD8CB91E90750400A15EF5 /* TitleBG.jpg in Resources */,
 				44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */,
+				44DD8CC81E907BB300A15EF5 /* line.png in Resources */,
 				448E46E91E8F8E7900384545 /* Main.storyboard in Resources */,
+				44DD8CC41E90786E00A15EF5 /* Accuratist.ttf in Resources */,
+				44DD8CC01E90781700A15EF5 /* guildof.ttf in Resources */,
 				44DD8CB51E90575100A15EF5 /* trash-data.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

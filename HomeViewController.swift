@@ -8,6 +8,17 @@
 
 import UIKit
 
+extension UIImage {
+    
+    func alpha(_ value:CGFloat) -> UIImage {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+    }
+}
+
 class HomeViewController: UIViewController, UITextFieldDelegate {
     
     let limitLength = 25
@@ -24,6 +35,9 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         queryTextField.delegate = self
+        
+        let img = UIImage(named: "line.png")!.alpha(0.5)
+        queryTextField.background = img
         
     }
     
