@@ -24,15 +24,24 @@ canvas,0,Nearly 100 percent of textiles and clothing are recyclable!,FALSE
 wood,0,Wood shavings and small amounts of wood can also be composted!,FALSE
 pyrex,2,Pyrex cannot be recycled due to its high melting point!,FALSE
 mirror,2,Mirrors cannot be recycled due to their high melting points!,FALSE
+bandaid,2,Place the bandaid in a plastic bag before disposal to be safe.,FALSE
+bandage,2,Place the bandage in a plastic bag before disposal to be safe.,FALSE
+medication,2,Place the medication in a plastic bag before disposal to be safe.,FALSE
+paint,2,Paint can damage the soil and groundwater if improperly disposed of. There are drop-off sites that accept paint cans!,FALSE
+dye,2,Dye can damage the soil and groundwater if improperly disposed of.,FALSE
 jewelry,4,You can make a lot of money recycling/selling unwanted jewelry!,FALSE
+marker,2,The ink cartridge inside markers is not recyclable.,FALSE
 battery,3,Only 12.5% of E-Waste is recycled! Take your e-waste to a local e-waste disposal!,FALSE
 headphones,3,Only 12.5% of E-Waste is recycled! Take your e-waste to a local e-waste disposal!,FALSE
 computer,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 laptop,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 cartridge,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 electronic,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
+wires,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
+cables,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 phone,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 cd,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
+condoms,2,Be safe!,FALSE
 glasses,4,Take your old glasses to your optometrist for reuse!,FALSE
 weeds,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 shrubs,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
@@ -44,6 +53,7 @@ leaves,1,Compost improves soil by adding important nutrients for plants and redu
 coffee,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 water,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,TRUE
 tea,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+teabag,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 plant,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 sawdust,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 lint,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
@@ -54,8 +64,22 @@ hay,1,Compost improves soil by adding important nutrients for plants and reduces
 straw,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 tomato,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 cucumber,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+chocolate,1,Chocolate belongs in your stomach - not the compost. :(,FALSE
+eggs,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+grains,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+vegetables,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+milk,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+cheese,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+meat,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+seafood,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+chicken,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+turkey,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+poultry,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 pumpkin,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 zucchini,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 squash,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 burger,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
-USC,2,Handle with caution when disposing of Trojans.,FALSE
+fries,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+falafel,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+pasta,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+usc,2,Exercise caution when disposing of Trojans.,FALSE

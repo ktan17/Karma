@@ -204,11 +204,32 @@ class ResultViewController: UIViewController {
             materialFact = "E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!"
             
         }
+            
+        else if lowercaseQuery.contains("baby food") || lowercaseQuery.contains("pet food") || lowercaseQuery.contains("dog food") || lowercaseQuery.contains("cat food") {
+            
+            materialStatus = 1
+            materialFact = "Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!"
+            
+        }
+            
+        else if lowercaseQuery.contains("solo cup") {
+            
+            materialStatus = 2
+            materialFact = "Solo cups are usually made out of #6 plastic which is not accepted by most municipal recycling facilities."
+            
+        }
         
         else if lowercaseQuery.contains("hannah elarabawy") {
             
             materialStatus = 3
             materialFact = "spews a disgusting amount of puns, dispose of properly."
+            
+        }
+            
+        else if lowercaseQuery.contains("aerosol can") {
+            
+            materialStatus = 2
+            materialFact = "Aerosol cans can only be safely disposed of when empty!"
             
         }
         
@@ -223,6 +244,13 @@ class ResultViewController: UIViewController {
             
             materialStatus = 1
             materialFact = "truly belongs in the dirt"
+            
+        }
+        
+        else if lowercaseQuery.contains("carey nachenberg") {
+            
+            materialStatus = 2
+            materialFact = "hasn't released grades yet and is trash"
             
         }
         

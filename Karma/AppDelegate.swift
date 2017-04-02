@@ -33,6 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         let defaults = UserDefaults.standard
+        defaults.set(false, forKey: "isPreloaded")
         let isPreloaded = defaults.bool(forKey: "isPreloaded")
         if !isPreloaded {
             removeData()
