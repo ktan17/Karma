@@ -19,6 +19,7 @@ class ResultViewController: UIViewController {
     
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
+    @IBOutlet var forrestDump: UIImageView!
     
     ///////////////////////////////////////////////////////////////////////////
     //  Methods
@@ -147,6 +148,8 @@ class ResultViewController: UIViewController {
             
             case 5:
                 self.statusLabel.text = "No results."
+                let img = UIImage(named: "forrest-dump-sad.png")
+                forrestDump.image = img
                 break
             
             default:

@@ -187,6 +187,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="22u-HB-TR1"/>
                     <connections>
+                        <outlet property="forrestDump" destination="Rwf-gq-HDJ" id="jYA-rz-DHO"/>
                         <outlet property="resultLabel" destination="vVH-0H-LlF" id="De4-BB-8Zc"/>
                         <outlet property="statusLabel" destination="SNy-UU-LWZ" id="5ox-UU-niE"/>
                     </connections>
