@@ -1,11 +1,10 @@
 cardboard,0,Reusing cardboard takes 24% less energy than making it from raw materials!,TRUE
 plastic,0,Recycling plastic saves twice the amount of energy as incinerating it!,TRUE
 glass,0,Glass is 100% recyclable and can be recycled endlessly without loss in quality or purity!,TRUE
-paper,0,"The amount of wood and paper we throw away each year is enough to heat 50,000,000 homes for 20
-years! Wow!",TRUE
-styrofoam,2,"American throw away 25,000,000,000 styrofoam coffee cups every year. Uh - oh!",FALSE
+paper,0,The amount of wood and paper we throw away each year is enough to heat 50 million homes for 20 years! Wow!,TRUE
+styrofoam,2,American throw away 25 billion styrofoam coffee cups every year. Uh - oh!,FALSE
 aluminum,0,Recycling one aluminum can saves enough energy to run a TV for three hours!,FALSE
-metal,0,"Today, the U.S. scrap recycling industry employs more than 137,000 people!",TRUE
+metal,0,The U.S. scrap recycling industry employs more than 137 thousand people!,TRUE
 wax,2,Wax paper is not recyclable... So sad!,FALSE
 fabric,0,You also have the option of donating your fabrics.,FALSE
 cotton,0,Cotton is 100% recyclabe and can also be reused if taken to a donation site!,FALSE
@@ -30,21 +29,21 @@ electronic,3,E-waste comprises 70% of our overall toxic waste! Please dispose of
 phone,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 cd,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 glasses,4,Take your old glasses to your optometrist for reuse!,FALSE
-weeds,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-shrubs,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-banana,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-food,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-fruit,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-pizza,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-leaves,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-coffee,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-water,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",TRUE
-tea,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-plant,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-sawdust,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-lint,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-ashes,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-hair,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-nut,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-hay,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
-straw,1,"Compost improves soil, adds important nutrients for plants, and reduces the need for expensive commercial fertilizers!",FALSE
+weeds,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+shrubs,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+banana,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+food,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+fruit,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+pizza,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+leaves,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+coffee,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+water,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,TRUE
+tea,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+plant,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+sawdust,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+lint,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+ashes,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+hair,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+nut,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+hay,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+straw,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE

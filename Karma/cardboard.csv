@@ -1,4 +1,5 @@
-wet,1,Compost wet cardboard since it can contaminate an entire batch or recyclables if recycled!
-greasy,1,Any cardboard with food residue cannot be recycled, but it can be composted!
-soiled,1,
-plastic,2,Any cardboard that is coated with plastic is not recyclable!
+wet,1,Wet cardboard can cause an entire batch of recycling to be thrown away. Make sure to compost it!,
+greasy,1,Greasy cardboard can cause an entire batch of recycling to be thrown away. Make sure to compost it!, 
+soiled,1,Food ridden cardboard can cause an entire batch of recycling to be thrown away. Make sure to compost it!,
+plastic,2,Plastic and cardboard when in one object cannot be recycled due to their different recycling processes!,
+metal,2,Metal and cardboard when in one object cannot be recycled due to their different recycling processes!,

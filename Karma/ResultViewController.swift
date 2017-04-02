@@ -107,6 +107,8 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
+                            materialStatus = Int16(fetchedItems[index].type)
+                            materialFact = fetchedItems[index].comment!
                             break
                             
                         case "glass":
@@ -122,6 +124,59 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
+                            materialStatus = Int16(fetchedItems[index].type)
+                            materialFact = fetchedItems[index].comment!
+                            break
+                            
+                        case "paper":
+                            let paperRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PaperItem")
+                            let paperItems = try managedObjectContext.fetch(paperRequest) as! [PaperItem]
+                            for words in wordArray {
+                                
+                                if let index2 = paperItems.index(where: { $0.modifier == words } ) {
+                                    
+                                    materialStatus = Int16(paperItems[index2].type)
+                                    materialFact = paperItems[index2].comment!
+                                    
+                                }
+                                
+                            }
+                            materialStatus = Int16(fetchedItems[index].type)
+                            materialFact = fetchedItems[index].comment!
+                            break
+                            
+                        case "plastic":
+                            let plasticRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "PlasticItem")
+                            let plasticItems = try managedObjectContext.fetch(plasticRequest) as! [PlasticItem]
+                            for words in wordArray {
+                                
+                                if let index2 = plasticItems.index(where: { $0.modifier == words } ) {
+                                    
+                                    materialStatus = Int16(plasticItems[index2].type)
+                                    materialFact = plasticItems[index2].comment!
+                                    
+                                }
+                                
+                            }
+                            materialStatus = Int16(fetchedItems[index].type)
+                            materialFact = fetchedItems[index].comment!
+                            break
+                            
+                        case "metal":
+                            let metalRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "MetalItem")
+                            let metalItems = try managedObjectContext.fetch(metalRequest) as! [MetalItem]
+                            for words in wordArray {
+                                
+                                if let index2 = metalItems.index(where: { $0.modifier == words } ) {
+                                    
+                                    materialStatus = Int16(metalItems[index2].type)
+                                    materialFact = metalItems[index2].comment!
+                                    
+                                }
+                                
+                            }
+                            materialStatus = Int16(fetchedItems[index].type)
+                            materialFact = fetchedItems[index].comment!
                             break
                             
                         default:
@@ -179,6 +234,10 @@ class ResultViewController: UIViewController {
         
             case 2:
                 self.statusLabel.text = "TRASH"
+                
+                let img = UIImage(named: "forrest-dump-sad.png")
+                forrestDump.image = img
+                
                 self.trashTalk2.text = fact
                 break
        
