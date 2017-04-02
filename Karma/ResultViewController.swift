@@ -20,7 +20,10 @@ class ResultViewController: UIViewController {
     @IBOutlet var resultLabel: UILabel!
     @IBOutlet var statusLabel: UILabel!
     @IBOutlet var forrestDump: UIImageView!
-    
+    @IBOutlet var cloudImg: UIImageView!
+    @IBOutlet var trashTalk: UILabel!
+    @IBOutlet var trashTalk2: UILabel!
+
     ///////////////////////////////////////////////////////////////////////////
     //  Methods
     ///////////////////////////////////////////////////////////////////////////
@@ -128,28 +131,38 @@ class ResultViewController: UIViewController {
         {
             case 0:
                 self.statusLabel.text = "RECYCLABLE"
+                self.statusLabel.text = fact
                 break
             
             case 1:
                 self.statusLabel.text = "COMPOSTABLE"
+                self.statusLabel.text = fact
                 break
         
             case 2:
                 self.statusLabel.text = "TRASH"
+                self.statusLabel.text = fact
                 break
        
             case 3:
                 self.statusLabel.text = "E-WASTE"
+                self.statusLabel.text = fact
                 break
             
             case 4:
                 self.statusLabel.text = "REUSABLE"
+                self.statusLabel.text = fact
                 break
             
             case 5:
                 self.statusLabel.text = "No results."
+            
                 let img = UIImage(named: "forrest-dump-sad.png")
                 forrestDump.image = img
+                
+                trashTalk.isHidden = true
+                trashTalk2.isHidden = true
+                cloudImg.isHidden = true
                 break
             
             default:
