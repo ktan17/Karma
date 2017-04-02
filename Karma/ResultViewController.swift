@@ -18,6 +18,7 @@ class ResultViewController: UIViewController {
     var materialFact: String = ""
     
     @IBOutlet var resultLabel: UILabel!
+    @IBOutlet var statusLabel: UILabel!
     
     ///////////////////////////////////////////////////////////////////////////
     //  Methods
@@ -125,46 +126,32 @@ class ResultViewController: UIViewController {
         switch (status)
         {
             case 0:
-            {
-                //
+                self.statusLabel.text = "RECYCLABLE"
                 break
-            }
             
             case 1:
-            {
-                //
+                self.statusLabel.text = "COMPOSTABLE"
                 break
-            }
         
             case 2:
-            {
-                //
+                self.statusLabel.text = "TRASH"
                 break
-            }
        
             case 3:
-            {
-                //
+                self.statusLabel.text = "E-WASTE"
                 break
-            }
             
             case 4:
-            {
-                //
+                self.statusLabel.text = "REUSABLE"
                 break
-            }
             
             case 5:
-            {
-                //
+                self.statusLabel.text = "No results."
                 break
-            }
             
             default:
-            {
-                    //
-                    break
-            }
+                self.statusLabel.text = "God bless Egypt and Canada and India"
+                break
         }
     }
     
