@@ -14,6 +14,8 @@ ceramic,2,One ceramic coffee mug alone in a truckload of glass is enough to cont
 iron,0,Iron is one of the world's most recycled materials and among the easiest materials to recprocess.,FALSE
 foam,2,Some foam recycling drop off locations are emerging around the world!,FALSE
 rubber,2,You can recycle your tires if you drop them off at a facility!,FALSE
+leather,1,Some leather can also be reconstituted at local facilities.,FALSE
+shoes,4,Nike grinds up worn-out athletic shoes to make sports surfaces!,FALSE
 brass,0,You can sell your scrap metal to make some extra money!,FALSE
 copper,0,Recycling copper as opposed to processing new copper saves 85-90% of energy!,FALSE
 steel,0,Steel takes up to 100 years to fully degrade in a landfill. So make sure to recycle!,FALSE
@@ -22,8 +24,11 @@ canvas,0,Nearly 100 percent of textiles and clothing are recyclable!,FALSE
 wood,0,Wood shavings and small amounts of wood can also be composted!,FALSE
 pyrex,2,Pyrex cannot be recycled due to its high melting point!,FALSE
 mirror,2,Mirrors cannot be recycled due to their high melting points!,FALSE
+jewelry,4,You can make a lot of money recycling/selling unwanted jewelry!,FALSE
 battery,3,Only 12.5% of E-Waste is recycled! Take your e-waste to a local e-waste disposal!,FALSE
+headphones,3,Only 12.5% of E-Waste is recycled! Take your e-waste to a local e-waste disposal!,FALSE
 computer,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
+laptop,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 cartridge,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 electronic,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
 phone,3,E-waste comprises 70% of our overall toxic waste! Please dispose of it correctly!,FALSE
@@ -47,3 +52,10 @@ hair,1,Compost improves soil by adding important nutrients for plants and reduce
 nut,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 hay,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
 straw,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+tomato,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+cucumber,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+pumpkin,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+zucchini,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+squash,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+burger,1,Compost improves soil by adding important nutrients for plants and reduces the need for expensive commercial fertilizers!,FALSE
+USC,2,Handle with caution when disposing of Trojans.,FALSE
