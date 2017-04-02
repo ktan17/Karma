@@ -22,6 +22,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TitleBG.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="0pr-UT-vJM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="recycling-icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="3GG-GO-UOs">
                                 <rect key="frame" x="107" y="127" width="160" height="160"/>
                             </imageView>
@@ -37,10 +40,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.61547944745049121" green="0.86673280423280419" blue="0.58216226509803115" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="0pr-UT-vJM" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="75g-0N-cCF"/>
                             <constraint firstItem="3GG-GO-UOs" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="91" id="8hO-JS-rIg"/>
+                            <constraint firstItem="0pr-UT-vJM" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Byw-xO-GJX"/>
                             <constraint firstItem="zD3-Lb-XSk" firstAttribute="top" secondItem="3GG-GO-UOs" secondAttribute="bottom" constant="31" id="DYg-th-bZ5"/>
                             <constraint firstItem="zD3-Lb-XSk" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="KT3-US-MNq"/>
+                            <constraint firstAttribute="trailing" secondItem="0pr-UT-vJM" secondAttribute="trailing" id="RG7-GE-EzI"/>
                             <constraint firstItem="3GG-GO-UOs" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="107" id="RZE-dp-LgM"/>
+                            <constraint firstItem="0pr-UT-vJM" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZsS-uV-Ei0"/>
+                            <constraint firstAttribute="bottom" secondItem="0pr-UT-vJM" secondAttribute="bottom" id="esZ-oe-4dm"/>
+                            <constraint firstItem="0pr-UT-vJM" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fH6-4A-Z4P"/>
                             <constraint firstItem="3GG-GO-UOs" firstAttribute="centerX" secondItem="zD3-Lb-XSk" secondAttribute="centerX" id="kOR-Gv-SMP"/>
                             <constraint firstItem="zD3-Lb-XSk" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="25" id="kjH-Rg-BVU"/>
                             <constraint firstItem="3GG-GO-UOs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ogD-6A-eo5"/>
@@ -53,6 +62,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="TitleBG.jpg" width="640" height="960"/>
         <image name="recycling-icon.png" width="1200" height="1161"/>
     </resources>
 </document>
