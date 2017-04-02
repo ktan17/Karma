@@ -189,7 +189,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 nextEntry.comment = item.comment
                 nextEntry.exceptions = item.exceptions
                 
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
             }
+            break
             
         case "Cardboard":
             for item in materialItems {
@@ -199,30 +210,106 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 nextEntry.type = Int16(item.trashType)
                 nextEntry.comment = item.comment
                 
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
             }
+            break
             
-        case "Cardboard":
+        case "Glass":
             for item in materialItems {
                 
-                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "CardboardItem", into: managedObjectContext) as! CardboardItem
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "GlassItem", into: managedObjectContext) as! GlassItem
                 nextEntry.modifier = item.modifier
                 nextEntry.type = Int16(item.trashType)
                 nextEntry.comment = item.comment
                 
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
             }
+            break
             
+        case "Paper":
+            for item in materialItems {
+                
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "PaperItem", into: managedObjectContext) as! PaperItem
+                nextEntry.modifier = item.modifier
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
+            }
+            break
             
+        case "Plastic":
+            for item in materialItems {
+                
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "PlasticItem", into: managedObjectContext) as! PlasticItem
+                nextEntry.modifier = item.modifier
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
+            }
+            break
+            
+        case "Metal":
+            for item in materialItems {
+                
+                let nextEntry = NSEntityDescription.insertNewObject(forEntityName: "MetalItem", into: managedObjectContext) as! MetalItem
+                nextEntry.modifier = item.modifier
+                nextEntry.type = Int16(item.trashType)
+                nextEntry.comment = item.comment
+                
+                do {
+                    
+                    try managedObjectContext.save()
+                    
+                } catch {
+                    
+                    print("insert error: \(error.localizedDescription)")
+                    
+                }
+                
+            }
+            break
+            
+        default:
+            break
         
-        }
-
-        do {
-            
-            try managedObjectContext.save()
-            
-        } catch {
-            
-            print("insert error: \(error.localizedDescription)")
-            
         }
     
     }
