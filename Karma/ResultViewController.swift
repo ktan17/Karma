@@ -109,6 +109,21 @@ class ResultViewController: UIViewController {
                             }
                             break
                             
+                        case "glass":
+                            let glassRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "GlassItem")
+                            let glassItems = try managedObjectContext.fetch(glassRequest) as! [GlassItem]
+                            for words in wordArray {
+                                
+                                if let index2 = glassItems.index(where: { $0.modifier == words } ) {
+                                    
+                                    materialStatus = Int16(glassItems[index2].type)
+                                    materialFact = glassItems[index2].comment!
+                                    
+                                }
+                                
+                            }
+                            break
+                            
                         default:
                             break
                             
