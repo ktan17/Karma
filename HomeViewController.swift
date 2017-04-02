@@ -46,6 +46,16 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func pressedGo(_ sender: UIButton) {
+        
+        guard let text = queryTextField.text else { return }
+        
+        if text == "" { return }
+        
+        self.performSegue(withIdentifier: "showResult", sender: self)
+        
+    }
+    
     ///////////////////////////////////////////////////////////////////////////
     //  Text Field Delegate
     ///////////////////////////////////////////////////////////////////////////
@@ -78,9 +88,10 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
+        guard let text = queryTextField.text else { return }
+        
         if segue.identifier == "showResult" {
             
-            guard let text = queryTextField.text else { return }
             let resultViewController = segue.destination as! ResultViewController
             resultViewController.query = text
             
