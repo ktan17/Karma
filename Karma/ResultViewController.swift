@@ -89,12 +89,34 @@ class ResultViewController: UIViewController {
                     isMaterialAnException = fetchedItems[index].exceptions
                     
                     // checking exceptions
-                    if (isMaterialAnException)
+                    if isMaterialAnException
                     {
-                        // TODO: check if any of the following entered words align with exceptions
-                        materialStatus = Int16(fetchedItems[index].type)
-                        materialFact = fetchedItems[index].comment!
-                    } else
+                        
+                        switch fetchedItems[index].name! {
+                            
+                        case "cardboard":
+                            let cardboardRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "CardboardItem")
+                            let cardboardItems = try managedObjectContext.fetch(cardboardRequest) as! [CardboardItem]
+                            for words in wordArray {
+                                
+                                if let index2 = cardboardItems.index(where: { $0.modifier == words } ) {
+                                    
+                                    materialStatus = Int16(cardboardItems[index2].type)
+                                    materialFact = cardboardItems[index2].comment!
+                                    
+                                }
+                                
+                            }
+                            break
+                            
+                        default:
+                            break
+                            
+                        }
+                        
+                    }
+                    
+                    else
                     {
                         // TODO: make sure that only one material is inputted
                         // TODO: set result based on numeric id value of material
