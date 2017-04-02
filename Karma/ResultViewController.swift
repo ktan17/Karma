@@ -33,6 +33,7 @@ class ResultViewController: UIViewController {
         super.viewDidLoad()
         
         resultLabel.text = "You typed in: " + query
+        statusLabel.adjustsFontSizeToFitWidth = true
     
         let lowercaseQuery = query.lowercased()
     
@@ -87,6 +88,8 @@ class ResultViewController: UIViewController {
                     
                     // found match...
                     isMaterialAnException = fetchedItems[index].exceptions
+                    materialStatus = Int16(fetchedItems[index].type)
+                    materialFact = fetchedItems[index].comment!
                     
                     // checking exceptions
                     if isMaterialAnException && wordArray.count > 1
@@ -107,8 +110,6 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
-                            materialStatus = Int16(fetchedItems[index].type)
-                            materialFact = fetchedItems[index].comment!
                             break
                             
                         case "glass":
@@ -124,8 +125,6 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
-                            materialStatus = Int16(fetchedItems[index].type)
-                            materialFact = fetchedItems[index].comment!
                             break
                             
                         case "paper":
@@ -141,8 +140,6 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
-                            materialStatus = Int16(fetchedItems[index].type)
-                            materialFact = fetchedItems[index].comment!
                             break
                             
                         case "plastic":
@@ -158,8 +155,6 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
-                            materialStatus = Int16(fetchedItems[index].type)
-                            materialFact = fetchedItems[index].comment!
                             break
                             
                         case "metal":
@@ -175,8 +170,6 @@ class ResultViewController: UIViewController {
                                 }
                                 
                             }
-                            materialStatus = Int16(fetchedItems[index].type)
-                            materialFact = fetchedItems[index].comment!
                             break
                             
                         default:
