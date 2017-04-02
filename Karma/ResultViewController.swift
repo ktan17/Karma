@@ -132,27 +132,27 @@ class ResultViewController: UIViewController {
         {
             case 0:
                 self.statusLabel.text = "RECYCLABLE"
-                self.statusLabel.text = fact
+                self.trashTalk2.text = fact
                 break
             
             case 1:
                 self.statusLabel.text = "COMPOSTABLE"
-                self.statusLabel.text = fact
+                self.trashTalk2.text = fact
                 break
         
             case 2:
                 self.statusLabel.text = "TRASH"
-                self.statusLabel.text = fact
+                self.trashTalk2.text = fact
                 break
        
             case 3:
                 self.statusLabel.text = "E-WASTE"
-                self.statusLabel.text = fact
+                self.trashTalk2.text = fact
                 break
             
             case 4:
                 self.statusLabel.text = "REUSABLE"
-                self.statusLabel.text = fact
+                self.trashTalk2.text = fact
                 break
             
             case 5:
