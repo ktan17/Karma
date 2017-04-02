@@ -25,6 +25,7 @@
 		44DD8CC81E907BB300A15EF5 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CC71E907BB300A15EF5 /* line.png */; };
 		44DD8CCA1E907DA900A15EF5 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CC91E907DA900A15EF5 /* wood.png */; };
 		44DD8CCC1E90879A00A15EF5 /* forrest-dump.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CCB1E90879A00A15EF5 /* forrest-dump.png */; };
+		44DD8CCE1E908B2B00A15EF5 /* forrest-dump-sad.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DD8CCD1E908B2B00A15EF5 /* forrest-dump-sad.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		44DD8CC71E907BB300A15EF5 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		44DD8CC91E907DA900A15EF5 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
 		44DD8CCB1E90879A00A15EF5 /* forrest-dump.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forrest-dump.png"; sourceTree = "<group>"; };
+		44DD8CCD1E908B2B00A15EF5 /* forrest-dump-sad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "forrest-dump-sad.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 				44DD8CBD1E90773B00A15EF5 /* TitleBG.jpg */,
 				44849B911E8FBDD300D94925 /* recycling-icon.png */,
 				44DD8CCB1E90879A00A15EF5 /* forrest-dump.png */,
+				44DD8CCD1E908B2B00A15EF5 /* forrest-dump-sad.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				44DD8CBE1E90773B00A15EF5 /* TitleBG.jpg in Resources */,
 				448E46F11E8F8E7900384545 /* LaunchScreen.storyboard in Resources */,
 				448E46EE1E8F8E7900384545 /* Assets.xcassets in Resources */,
+				44DD8CCE1E908B2B00A15EF5 /* forrest-dump-sad.png in Resources */,
 				44849B921E8FBDD300D94925 /* recycling-icon.png in Resources */,
 				44DD8CC81E907BB300A15EF5 /* line.png in Resources */,
 				44DD8CCC1E90879A00A15EF5 /* forrest-dump.png in Resources */,
