@@ -89,7 +89,7 @@ class ResultViewController: UIViewController {
                     isMaterialAnException = fetchedItems[index].exceptions
                     
                     // checking exceptions
-                    if isMaterialAnException
+                    if isMaterialAnException && wordArray.count > 1
                     {
                         
                         switch fetchedItems[index].name! {
