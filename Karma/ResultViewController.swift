@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import CoreData
 
 class ResultViewController: UIViewController {
     
     var query: String!
+    var wordArray = [String]()
+    var isMaterialAnException: Bool = false
+    var materialStatus: Int = 5
+    var materialCount: Int = 0
+    
     @IBOutlet var resultLabel: UILabel!
     
     ///////////////////////////////////////////////////////////////////////////
@@ -23,8 +29,7 @@ class ResultViewController: UIViewController {
         resultLabel.text = "You typed in: " + query
     
         let lowercaseQuery = query.lowercased()
-        
-        var wordArray = [String]()
+    
         var tempWord: String = ""
         
         var k = 0
@@ -60,6 +65,48 @@ class ResultViewController: UIViewController {
             tempWord += String(char)
             
         }
+        
+        var managedObjectContext: NSManagedObjectContext!
+        getManagedObjectContext(managedObjectContext: &managedObjectContext)
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "TrashItem")
+        
+        do {
+            
+            let fetchedItems = try managedObjectContext.fetch(fetchRequest) as! [TrashItem]
+            
+            for word in wordArray {
+            
+                if let index = fetchedItems.index(where: { $0.name == word} ) {
+                    
+                    // found match...
+                    isMaterialAnException = fetchedItems[index].exceptions
+                    
+                    // checking exceptions
+                    if (isMaterialAnException)
+                    {
+                        // check if any of the following entered words align with exceptions
+                    } else
+                    {
+                        // make sure that only one material is inputted
+                        // set result based on numeric id value of material
+                    }
+                    
+                    break
+                }
+                
+            }
+            
+        } catch {
+            
+            fatalError("Failed to fetch trash items: \(error)")
+            
+        }
+        
+        //displayResult() // in
+        // TODO: Iterate through Type Array (array of all of the trashtypes (0-4)) to determine if the query is recyclable, trash, etc.
+        
+        // Display what it is on the screen
         
     }
     
