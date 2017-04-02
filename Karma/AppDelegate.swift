@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let defaults = UserDefaults.standard
         let isPreloaded = defaults.bool(forKey: "isPreloaded")
-        if !isPreloaded {
+        //if !isPreloaded {
             removeData()
             loadDataFromCSV(file: "trash-data", material: "Trash")
             loadDataFromCSV(file: "cardboard", material: "Cardboard")
@@ -43,7 +43,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             loadDataFromCSV(file: "plastic", material: "Plastic")
             loadDataFromCSV(file: "metal", material: "Metal")
             defaults.set(true, forKey: "isPreloaded")
-        }
+        //}
         
         return true
     }
